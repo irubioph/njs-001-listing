@@ -1,4 +1,5 @@
 import styles from '@/styles/Listing.module.css'
+import Link from 'next/link';
 
 export const getStaticProps = async () => {
 
@@ -13,13 +14,11 @@ export const getStaticProps = async () => {
 const Listing = ({ listing }) => {
     return ( 
         <div>
-            <h1>Ivan's Listing</h1>
+            <h1>Ivan Listing</h1>
             {listing.map(listing => (
-                <div key={listing.id}>
-                    <a className={ styles.single }>
-                        <h3>{ listing.name }</h3>
-                    </a>
-                </div>
+                <Link href={'/listing/' + listing.id} key={listing.id} className={styles.single}>
+                    <h3>{ listing.name }</h3>
+                </Link>
             ))}
         </div>
      );

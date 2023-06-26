@@ -51,3 +51,10 @@ Lesson 7: Custom 404 Page
 Lesson 8: Redirecting Users ==>  #For future : Add count down timer to "You will be redirected in x seconds"
 Lesson 9: Images & Metadata ==> I used the Layout.js instead using ${children.type.name} and it works much better, the only drawback is that you have limited control for meta keywords.
 Lesson 10: Fetching Data (getStaticProps) - Again, this part is where you need to learn basic React stuff
+Lesson 11: Dynamic Routes (Part 1) - 
+
+        #       Target Routes
+                    /listing/id
+                    /listing/1
+                    /listing/2
+                    /listing/25
