@@ -59,3 +59,4 @@ Lesson 11: Dynamic Routes (Part 1) -
                     /listing/2
                     /listing/25
 Lesson 12: Dynamic Routes (Part 2 - getStaticPaths)
+Lesson 13: Fetching a Single Item
