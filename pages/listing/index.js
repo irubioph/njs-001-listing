@@ -12,12 +12,14 @@ export const getStaticProps = async () => {
 }
 
 const Listing = ({ listing }) => {
+    //console.log(listing)
+
     return ( 
         <div>
             <h1>Ivan Listing</h1>
-            {listing.map(listing => (
-                <Link href={'/listing/' + listing.id} key={listing.id} className={styles.single}>
-                    <h3>{ listing.name }</h3>
+            {listing.map(list => (
+                <Link href={'/listing/' + list.id} key={list.id} className={styles.single}>
+                    <h3>{ list.name }</h3>
                 </Link>
             ))}
         </div>
